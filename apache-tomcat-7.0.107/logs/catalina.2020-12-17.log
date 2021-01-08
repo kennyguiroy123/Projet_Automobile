@@ -715,3 +715,323 @@ déc. 17, 2020 6:03:28 PM hudson.WebAppMain$3 run
 INFO: Jenkins is fully up and running
 déc. 17, 2020 6:03:28 PM hudson.model.AsyncPeriodicWork lambda$doRun$0
 INFO: Finished Download metadata. 336 ms
+déc. 17, 2020 9:09:56 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Nom version serveur :              Apache Tomcat/7.0.107
+déc. 17, 2020 9:09:56 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Serveur compilé :                  Nov 18 2020 12:18:55 UTC
+déc. 17, 2020 9:09:56 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Version du serveur :               7.0.107.0
+déc. 17, 2020 9:09:56 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Nom de l'OS :                      Windows 10
+déc. 17, 2020 9:09:56 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Version OS :                       10.0
+déc. 17, 2020 9:09:56 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Architecture :                     amd64
+déc. 17, 2020 9:09:56 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Java Home :                        C:\Program Files\Java\jdk1.8.0_261\jre
+déc. 17, 2020 9:09:56 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Version JVM :                      1.8.0_261-b12
+déc. 17, 2020 9:09:56 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Fournisseur de la JVM :            Oracle Corporation
+déc. 17, 2020 9:09:56 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: CATALINA_BASE :                    C:\Users\33614\Documents\EPSI\MSPR\Preudhomme\pizza-spring\apache-tomcat-7.0.107
+déc. 17, 2020 9:09:56 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: CATALINA_HOME :                    C:\Users\33614\Documents\EPSI\MSPR\Preudhomme\pizza-spring\apache-tomcat-7.0.107
+déc. 17, 2020 9:09:56 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Argument de la ligne de commande : -Djava.util.logging.config.file=C:\Users\33614\Documents\EPSI\MSPR\Preudhomme\pizza-spring\apache-tomcat-7.0.107\conf\logging.properties
+déc. 17, 2020 9:09:56 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Argument de la ligne de commande : -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+déc. 17, 2020 9:09:56 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Argument de la ligne de commande : -Djdk.tls.ephemeralDHKeySize=2048
+déc. 17, 2020 9:09:56 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Argument de la ligne de commande : -Dignore.endorsed.dirs=
+déc. 17, 2020 9:09:56 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Argument de la ligne de commande : -Dcatalina.base=C:\Users\33614\Documents\EPSI\MSPR\Preudhomme\pizza-spring\apache-tomcat-7.0.107
+déc. 17, 2020 9:09:56 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Argument de la ligne de commande : -Dcatalina.home=C:\Users\33614\Documents\EPSI\MSPR\Preudhomme\pizza-spring\apache-tomcat-7.0.107
+déc. 17, 2020 9:09:56 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Argument de la ligne de commande : -Djava.io.tmpdir=C:\Users\33614\Documents\EPSI\MSPR\Preudhomme\pizza-spring\apache-tomcat-7.0.107\temp
+déc. 17, 2020 9:09:56 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFOS: Chargement de la librairie Apache Tomcat Native [1.2.25] en utilisant APR version [1.7.0]
+déc. 17, 2020 9:09:56 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFOS: Fonctionnalités d'APR : IPv6 [true], sendfile [true], accept filters [false], random [true]
+déc. 17, 2020 9:09:56 PM org.apache.catalina.core.AprLifecycleListener initializeSSL
+INFOS: OpenSSL a été initialisé avec succès [OpenSSL 1.1.1g  21 Apr 2020]
+déc. 17, 2020 9:09:56 PM org.apache.coyote.AbstractProtocol init
+INFOS: Initialisation du gestionnaire de protocole ["http-apr-8080"]
+déc. 17, 2020 9:09:56 PM org.apache.catalina.startup.Catalina load
+INFOS: Initialization processed in 863 ms
+déc. 17, 2020 9:09:56 PM org.apache.catalina.core.StandardService startInternal
+INFOS: Démarrage du service [Catalina]
+déc. 17, 2020 9:09:56 PM org.apache.catalina.core.StandardEngine startInternal
+INFOS: Starting Servlet Engine: Apache Tomcat/7.0.107
+déc. 17, 2020 9:09:56 PM org.apache.catalina.startup.HostConfig deployWAR
+INFOS: Déploiement de l'archive [C:\Users\33614\Documents\EPSI\MSPR\Preudhomme\pizza-spring\apache-tomcat-7.0.107\webapps\jenkins.war] de l'application web
+déc. 17, 2020 9:09:56 PM org.apache.catalina.deploy.WebXml setVersion
+AVERTISSEMENT: Unknown version string [3.1]. Default version will be used.
+déc. 17, 2020 9:10:00 PM org.apache.catalina.startup.ContextConfig validateSecurityRoles
+AVERTISSEMENT: Le nom de rôle de sécurité [**] est utilisé dans un <auth-constraint> sans avoir été défini dans <security-role>
+déc. 17, 2020 9:10:00 PM org.apache.catalina.startup.TldConfig execute
+INFOS: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+déc. 17, 2020 9:10:00 PM hudson.WebAppMain contextInitialized
+INFOS: Jenkins home directory: C:\Users\33614\.jenkins found at: $user.home/.jenkins
+déc. 17, 2020 9:10:01 PM org.apache.catalina.startup.HostConfig deployWAR
+INFOS: Le déploiement de l'archive de l'application web [C:\Users\33614\Documents\EPSI\MSPR\Preudhomme\pizza-spring\apache-tomcat-7.0.107\webapps\jenkins.war] s'est terminé en [4 696] ms
+déc. 17, 2020 9:10:01 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire d'application web [C:\Users\33614\Documents\EPSI\MSPR\Preudhomme\pizza-spring\apache-tomcat-7.0.107\webapps\docs]
+déc. 17, 2020 9:10:01 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Le déploiement du répertoire [C:\Users\33614\Documents\EPSI\MSPR\Preudhomme\pizza-spring\apache-tomcat-7.0.107\webapps\docs] de l'application web s'est terminé en [65] ms
+déc. 17, 2020 9:10:01 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire d'application web [C:\Users\33614\Documents\EPSI\MSPR\Preudhomme\pizza-spring\apache-tomcat-7.0.107\webapps\examples]
+déc. 17, 2020 9:10:01 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Le déploiement du répertoire [C:\Users\33614\Documents\EPSI\MSPR\Preudhomme\pizza-spring\apache-tomcat-7.0.107\webapps\examples] de l'application web s'est terminé en [338] ms
+déc. 17, 2020 9:10:01 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire d'application web [C:\Users\33614\Documents\EPSI\MSPR\Preudhomme\pizza-spring\apache-tomcat-7.0.107\webapps\host-manager]
+déc. 17, 2020 9:10:01 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Le déploiement du répertoire [C:\Users\33614\Documents\EPSI\MSPR\Preudhomme\pizza-spring\apache-tomcat-7.0.107\webapps\host-manager] de l'application web s'est terminé en [76] ms
+déc. 17, 2020 9:10:01 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire d'application web [C:\Users\33614\Documents\EPSI\MSPR\Preudhomme\pizza-spring\apache-tomcat-7.0.107\webapps\manager]
+déc. 17, 2020 9:10:01 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Le déploiement du répertoire [C:\Users\33614\Documents\EPSI\MSPR\Preudhomme\pizza-spring\apache-tomcat-7.0.107\webapps\manager] de l'application web s'est terminé en [72] ms
+déc. 17, 2020 9:10:01 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire d'application web [C:\Users\33614\Documents\EPSI\MSPR\Preudhomme\pizza-spring\apache-tomcat-7.0.107\webapps\ROOT]
+déc. 17, 2020 9:10:01 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Le déploiement du répertoire [C:\Users\33614\Documents\EPSI\MSPR\Preudhomme\pizza-spring\apache-tomcat-7.0.107\webapps\ROOT] de l'application web s'est terminé en [52] ms
+déc. 17, 2020 9:10:01 PM org.apache.coyote.AbstractProtocol start
+INFOS: Démarrage du gestionnaire de protocole ["http-apr-8080"]
+déc. 17, 2020 9:10:01 PM org.apache.catalina.startup.Catalina start
+INFOS: Server startup in 5403 ms
+déc. 17, 2020 9:10:02 PM jenkins.InitReactorRunner$1 onAttained
+INFOS: Started initialization
+déc. 17, 2020 9:10:02 PM hudson.PluginManager loadDetachedPlugins
+INFOS: Upgrading Jenkins. The last running version was 2.263.1. This Jenkins is version 2.270.
+déc. 17, 2020 9:10:02 PM hudson.PluginManager loadDetachedPlugins
+INFOS: Upgraded Jenkins from version 2.263.1 to version 2.270. Loaded detached plugins (and dependencies): []
+déc. 17, 2020 9:10:03 PM jenkins.InitReactorRunner$1 onAttained
+INFOS: Listed all plugins
+déc. 17, 2020 9:10:09 PM jenkins.InitReactorRunner$1 onAttained
+INFOS: Prepared all plugins
+déc. 17, 2020 9:10:09 PM jenkins.InitReactorRunner$1 onAttained
+INFOS: Started all plugins
+déc. 17, 2020 9:10:11 PM jenkins.InitReactorRunner$1 onAttained
+INFOS: Augmented all extensions
+déc. 17, 2020 9:10:11 PM jenkins.InitReactorRunner$1 onAttained
+INFOS: System config loaded
+déc. 17, 2020 9:10:11 PM jenkins.InitReactorRunner$1 onAttained
+INFOS: System config adapted
+déc. 17, 2020 9:10:11 PM jenkins.InitReactorRunner$1 onAttained
+INFOS: Loaded all jobs
+déc. 17, 2020 9:10:11 PM jenkins.InitReactorRunner$1 onAttained
+INFOS: Configuration for all jobs updated
+déc. 17, 2020 9:10:11 PM hudson.model.AsyncPeriodicWork lambda$doRun$0
+INFOS: Started Download metadata
+déc. 17, 2020 9:10:11 PM hudson.util.Retrier start
+INFOS: Attempt #1 to do the action check updates server
+déc. 17, 2020 9:10:11 PM jenkins.InitReactorRunner$1 onAttained
+INFOS: Completed initialization
+déc. 17, 2020 9:10:11 PM hudson.WebAppMain$3 run
+INFOS: Jenkins is fully up and running
+déc. 17, 2020 9:10:23 PM hudson.model.DownloadService$Downloadable load
+INFOS: Obtained the updated data file for hudson.tasks.Maven.MavenInstaller
+déc. 17, 2020 9:10:23 PM hudson.model.DownloadService$Downloadable load
+INFOS: Obtained the updated data file for hudson.tasks.Ant.AntInstaller
+déc. 17, 2020 9:10:23 PM hudson.model.DownloadService$Downloadable load
+INFOS: Obtained the updated data file for hudson.plugins.gradle.GradleInstaller
+déc. 17, 2020 9:10:25 PM hudson.model.DownloadService$Downloadable load
+INFOS: Obtained the updated data file for hudson.tools.JDKInstaller
+déc. 17, 2020 9:10:25 PM hudson.util.Retrier start
+INFOS: Performed the action check updates server successfully at the attempt #1
+déc. 17, 2020 9:10:25 PM hudson.model.AsyncPeriodicWork lambda$doRun$0
+INFOS: Finished Download metadata. 14 222 ms
+déc. 17, 2020 10:09:58 PM hudson.model.AsyncPeriodicWork lambda$doRun$0
+INFOS: Started Periodic background build discarder
+déc. 17, 2020 10:09:58 PM hudson.model.AsyncPeriodicWork lambda$doRun$0
+INFOS: Finished Periodic background build discarder. 40 ms
+déc. 17, 2020 10:22:10 PM org.apache.catalina.core.StandardServer await
+INFOS: Une commande d'arrêt valide a été reçue sur le port d'arrêt, arrêt de l'instance du serveur
+déc. 17, 2020 10:22:10 PM org.apache.coyote.AbstractProtocol pause
+INFOS: Le gestionnaire de protocole ["http-apr-8080"] est mis en pause
+déc. 17, 2020 10:22:10 PM org.apache.catalina.core.StandardService stopInternal
+INFOS: Arrêt du service [Catalina]
+déc. 17, 2020 10:22:10 PM jenkins.model.Jenkins cleanUp
+INFOS: Stopping Jenkins
+déc. 17, 2020 10:22:10 PM jenkins.model.Jenkins$18 onAttained
+INFOS: Started termination
+déc. 17, 2020 10:22:10 PM jenkins.model.Jenkins$18 onAttained
+INFOS: Completed termination
+déc. 17, 2020 10:22:10 PM jenkins.model.Jenkins _cleanUpDisconnectComputers
+INFOS: Starting node disconnection
+déc. 17, 2020 10:22:10 PM jenkins.model.Jenkins _cleanUpShutdownPluginManager
+INFOS: Stopping plugin manager
+déc. 17, 2020 10:22:11 PM jenkins.model.Jenkins _cleanUpPersistQueue
+INFOS: Persisting build queue
+déc. 17, 2020 10:22:11 PM jenkins.model.Jenkins _cleanUpAwaitDisconnects
+INFOS: Waiting for node disconnection completion
+déc. 17, 2020 10:22:11 PM jenkins.model.Jenkins cleanUp
+INFOS: Jenkins stopped
+déc. 17, 2020 10:22:11 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+GRAVE: The web application [/jenkins] appears to have started a thread named [Computer.threadPoolForRemoting [#2]] but has failed to stop it. This is very likely to create a memory leak.
+déc. 17, 2020 10:22:11 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+GRAVE: The web application [/jenkins] appears to have started a thread named [Computer.threadPoolForRemoting [#3]] but has failed to stop it. This is very likely to create a memory leak.
+déc. 17, 2020 10:22:11 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+GRAVE: The web application [/jenkins] appears to have started a thread named [Timeout.interruptions [#1]] but has failed to stop it. This is very likely to create a memory leak.
+déc. 17, 2020 10:22:11 PM org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+GRAVE: L'application web [/jenkins] a crée un ThreadLocal avec une clé de type [java.lang.ThreadLocal] (valeur [java.lang.ThreadLocal@338adbc8]) et une valeur de type [org.springframework.security.core.context.SecurityContextImpl] (valeur [SecurityContextImpl [Null authentication]]) mais ne l'a pas supprimé lorsqu'elle a été arrêtée, les threads seront graduellement renouvelés pour éviter une probable fuite de mémoire
+déc. 17, 2020 10:22:11 PM org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+GRAVE: L'application web [/jenkins] a crée un ThreadLocal avec une clé de type [java.lang.ThreadLocal] (valeur [java.lang.ThreadLocal@338adbc8]) et une valeur de type [org.springframework.security.core.context.SecurityContextImpl] (valeur [SecurityContextImpl [Null authentication]]) mais ne l'a pas supprimé lorsqu'elle a été arrêtée, les threads seront graduellement renouvelés pour éviter une probable fuite de mémoire
+déc. 17, 2020 10:22:11 PM org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+GRAVE: L'application web [/jenkins] a crée un ThreadLocal avec une clé de type [java.lang.ThreadLocal] (valeur [java.lang.ThreadLocal@338adbc8]) et une valeur de type [org.springframework.security.core.context.SecurityContextImpl] (valeur [SecurityContextImpl [Null authentication]]) mais ne l'a pas supprimé lorsqu'elle a été arrêtée, les threads seront graduellement renouvelés pour éviter une probable fuite de mémoire
+déc. 17, 2020 10:22:11 PM org.apache.coyote.AbstractProtocol stop
+INFOS: Arrêt du gestionnaire de protocole ["http-apr-8080"]
+déc. 17, 2020 10:22:11 PM org.apache.coyote.AbstractProtocol destroy
+INFOS: Destruction du gestionnaire de protocole ["http-apr-8080"]
+déc. 17, 2020 10:22:16 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Nom version serveur :              Apache Tomcat/7.0.107
+déc. 17, 2020 10:22:16 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Serveur compilé :                  Nov 18 2020 12:18:55 UTC
+déc. 17, 2020 10:22:16 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Version du serveur :               7.0.107.0
+déc. 17, 2020 10:22:16 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Nom de l'OS :                      Windows 10
+déc. 17, 2020 10:22:16 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Version OS :                       10.0
+déc. 17, 2020 10:22:16 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Architecture :                     amd64
+déc. 17, 2020 10:22:16 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Java Home :                        C:\Program Files\Java\jdk1.8.0_261\jre
+déc. 17, 2020 10:22:16 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Version JVM :                      1.8.0_261-b12
+déc. 17, 2020 10:22:16 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Fournisseur de la JVM :            Oracle Corporation
+déc. 17, 2020 10:22:16 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: CATALINA_BASE :                    C:\Users\33614\Documents\EPSI\MSPR\Preudhomme\pizza-spring\apache-tomcat-7.0.107
+déc. 17, 2020 10:22:16 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: CATALINA_HOME :                    C:\Users\33614\Documents\EPSI\MSPR\Preudhomme\pizza-spring\apache-tomcat-7.0.107
+déc. 17, 2020 10:22:16 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Argument de la ligne de commande : -Djava.util.logging.config.file=C:\Users\33614\Documents\EPSI\MSPR\Preudhomme\pizza-spring\apache-tomcat-7.0.107\conf\logging.properties
+déc. 17, 2020 10:22:16 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Argument de la ligne de commande : -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+déc. 17, 2020 10:22:16 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Argument de la ligne de commande : -Djdk.tls.ephemeralDHKeySize=2048
+déc. 17, 2020 10:22:16 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Argument de la ligne de commande : -Dignore.endorsed.dirs=
+déc. 17, 2020 10:22:16 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Argument de la ligne de commande : -Dcatalina.base=C:\Users\33614\Documents\EPSI\MSPR\Preudhomme\pizza-spring\apache-tomcat-7.0.107
+déc. 17, 2020 10:22:16 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Argument de la ligne de commande : -Dcatalina.home=C:\Users\33614\Documents\EPSI\MSPR\Preudhomme\pizza-spring\apache-tomcat-7.0.107
+déc. 17, 2020 10:22:16 PM org.apache.catalina.startup.VersionLoggerListener log
+INFOS: Argument de la ligne de commande : -Djava.io.tmpdir=C:\Users\33614\Documents\EPSI\MSPR\Preudhomme\pizza-spring\apache-tomcat-7.0.107\temp
+déc. 17, 2020 10:22:16 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFOS: Chargement de la librairie Apache Tomcat Native [1.2.25] en utilisant APR version [1.7.0]
+déc. 17, 2020 10:22:16 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFOS: Fonctionnalités d'APR : IPv6 [true], sendfile [true], accept filters [false], random [true]
+déc. 17, 2020 10:22:16 PM org.apache.catalina.core.AprLifecycleListener initializeSSL
+INFOS: OpenSSL a été initialisé avec succès [OpenSSL 1.1.1g  21 Apr 2020]
+déc. 17, 2020 10:22:17 PM org.apache.coyote.AbstractProtocol init
+INFOS: Initialisation du gestionnaire de protocole ["http-apr-8080"]
+déc. 17, 2020 10:22:17 PM org.apache.catalina.startup.Catalina load
+INFOS: Initialization processed in 926 ms
+déc. 17, 2020 10:22:17 PM org.apache.catalina.core.StandardService startInternal
+INFOS: Démarrage du service [Catalina]
+déc. 17, 2020 10:22:17 PM org.apache.catalina.core.StandardEngine startInternal
+INFOS: Starting Servlet Engine: Apache Tomcat/7.0.107
+déc. 17, 2020 10:22:17 PM org.apache.catalina.startup.HostConfig deployWAR
+INFOS: Déploiement de l'archive [C:\Users\33614\Documents\EPSI\MSPR\Preudhomme\pizza-spring\apache-tomcat-7.0.107\webapps\jenkins.war] de l'application web
+déc. 17, 2020 10:22:17 PM org.apache.catalina.deploy.WebXml setVersion
+AVERTISSEMENT: Unknown version string [3.1]. Default version will be used.
+déc. 17, 2020 10:22:21 PM org.apache.catalina.startup.ContextConfig validateSecurityRoles
+AVERTISSEMENT: Le nom de rôle de sécurité [**] est utilisé dans un <auth-constraint> sans avoir été défini dans <security-role>
+déc. 17, 2020 10:22:21 PM org.apache.catalina.startup.TldConfig execute
+INFOS: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+déc. 17, 2020 10:22:22 PM hudson.WebAppMain contextInitialized
+INFOS: Jenkins home directory: C:\Users\33614\.jenkins found at: $user.home/.jenkins
+déc. 17, 2020 10:22:22 PM org.apache.catalina.startup.HostConfig deployWAR
+INFOS: Le déploiement de l'archive de l'application web [C:\Users\33614\Documents\EPSI\MSPR\Preudhomme\pizza-spring\apache-tomcat-7.0.107\webapps\jenkins.war] s'est terminé en [5 274] ms
+déc. 17, 2020 10:22:22 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire d'application web [C:\Users\33614\Documents\EPSI\MSPR\Preudhomme\pizza-spring\apache-tomcat-7.0.107\webapps\docs]
+déc. 17, 2020 10:22:22 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Le déploiement du répertoire [C:\Users\33614\Documents\EPSI\MSPR\Preudhomme\pizza-spring\apache-tomcat-7.0.107\webapps\docs] de l'application web s'est terminé en [74] ms
+déc. 17, 2020 10:22:22 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire d'application web [C:\Users\33614\Documents\EPSI\MSPR\Preudhomme\pizza-spring\apache-tomcat-7.0.107\webapps\examples]
+déc. 17, 2020 10:22:23 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Le déploiement du répertoire [C:\Users\33614\Documents\EPSI\MSPR\Preudhomme\pizza-spring\apache-tomcat-7.0.107\webapps\examples] de l'application web s'est terminé en [518] ms
+déc. 17, 2020 10:22:23 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire d'application web [C:\Users\33614\Documents\EPSI\MSPR\Preudhomme\pizza-spring\apache-tomcat-7.0.107\webapps\host-manager]
+déc. 17, 2020 10:22:23 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Le déploiement du répertoire [C:\Users\33614\Documents\EPSI\MSPR\Preudhomme\pizza-spring\apache-tomcat-7.0.107\webapps\host-manager] de l'application web s'est terminé en [79] ms
+déc. 17, 2020 10:22:23 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire d'application web [C:\Users\33614\Documents\EPSI\MSPR\Preudhomme\pizza-spring\apache-tomcat-7.0.107\webapps\manager]
+déc. 17, 2020 10:22:23 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Le déploiement du répertoire [C:\Users\33614\Documents\EPSI\MSPR\Preudhomme\pizza-spring\apache-tomcat-7.0.107\webapps\manager] de l'application web s'est terminé en [76] ms
+déc. 17, 2020 10:22:23 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Déploiement du répertoire d'application web [C:\Users\33614\Documents\EPSI\MSPR\Preudhomme\pizza-spring\apache-tomcat-7.0.107\webapps\ROOT]
+déc. 17, 2020 10:22:23 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Le déploiement du répertoire [C:\Users\33614\Documents\EPSI\MSPR\Preudhomme\pizza-spring\apache-tomcat-7.0.107\webapps\ROOT] de l'application web s'est terminé en [61] ms
+déc. 17, 2020 10:22:23 PM org.apache.coyote.AbstractProtocol start
+INFOS: Démarrage du gestionnaire de protocole ["http-apr-8080"]
+déc. 17, 2020 10:22:23 PM org.apache.catalina.startup.Catalina start
+INFOS: Server startup in 6201 ms
+déc. 17, 2020 10:22:24 PM jenkins.InitReactorRunner$1 onAttained
+INFOS: Started initialization
+déc. 17, 2020 10:22:25 PM jenkins.InitReactorRunner$1 onAttained
+INFOS: Listed all plugins
+déc. 17, 2020 10:22:35 PM jenkins.InitReactorRunner$1 onAttained
+INFOS: Prepared all plugins
+déc. 17, 2020 10:22:35 PM jenkins.InitReactorRunner$1 onAttained
+INFOS: Started all plugins
+déc. 17, 2020 10:22:37 PM jenkins.InitReactorRunner$1 onAttained
+INFOS: Augmented all extensions
+déc. 17, 2020 10:22:37 PM jenkins.InitReactorRunner$1 onAttained
+INFOS: System config loaded
+déc. 17, 2020 10:22:37 PM jenkins.InitReactorRunner$1 onAttained
+INFOS: System config adapted
+déc. 17, 2020 10:22:37 PM jenkins.InitReactorRunner$1 onAttained
+INFOS: Loaded all jobs
+déc. 17, 2020 10:22:37 PM jenkins.InitReactorRunner$1 onAttained
+INFOS: Configuration for all jobs updated
+déc. 17, 2020 10:22:38 PM hudson.model.AsyncPeriodicWork lambda$doRun$0
+INFOS: Started Download metadata
+déc. 17, 2020 10:22:38 PM hudson.model.AsyncPeriodicWork lambda$doRun$0
+INFOS: Finished Download metadata. 11 ms
+déc. 17, 2020 10:22:38 PM jenkins.InitReactorRunner$1 onAttained
+INFOS: Completed initialization
+déc. 17, 2020 10:22:38 PM hudson.WebAppMain$3 run
+INFOS: Jenkins is fully up and running
+déc. 17, 2020 10:22:41 PM org.apache.catalina.core.StandardServer await
+INFOS: Une commande d'arrêt valide a été reçue sur le port d'arrêt, arrêt de l'instance du serveur
+déc. 17, 2020 10:22:41 PM org.apache.coyote.AbstractProtocol pause
+INFOS: Le gestionnaire de protocole ["http-apr-8080"] est mis en pause
+déc. 17, 2020 10:22:41 PM org.apache.catalina.core.StandardService stopInternal
+INFOS: Arrêt du service [Catalina]
+déc. 17, 2020 10:22:41 PM jenkins.model.Jenkins cleanUp
+INFOS: Stopping Jenkins
+déc. 17, 2020 10:22:41 PM jenkins.model.Jenkins$18 onAttained
+INFOS: Started termination
+déc. 17, 2020 10:22:42 PM jenkins.model.Jenkins$18 onAttained
+INFOS: Completed termination
+déc. 17, 2020 10:22:42 PM jenkins.model.Jenkins _cleanUpDisconnectComputers
+INFOS: Starting node disconnection
+déc. 17, 2020 10:22:42 PM jenkins.model.Jenkins _cleanUpShutdownPluginManager
+INFOS: Stopping plugin manager
+déc. 17, 2020 10:22:42 PM jenkins.model.Jenkins _cleanUpPersistQueue
+INFOS: Persisting build queue
+déc. 17, 2020 10:22:42 PM jenkins.model.Jenkins _cleanUpAwaitDisconnects
+INFOS: Waiting for node disconnection completion
+déc. 17, 2020 10:22:42 PM jenkins.model.Jenkins cleanUp
+INFOS: Jenkins stopped
+déc. 17, 2020 10:22:42 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+GRAVE: The web application [/jenkins] appears to have started a thread named [Computer.threadPoolForRemoting [#1]] but has failed to stop it. This is very likely to create a memory leak.
+déc. 17, 2020 10:22:42 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+GRAVE: The web application [/jenkins] appears to have started a thread named [Timeout.interruptions [#1]] but has failed to stop it. This is very likely to create a memory leak.
+déc. 17, 2020 10:22:42 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+GRAVE: The web application [/jenkins] appears to have started a thread named [Computer.threadPoolForRemoting [#2]] but has failed to stop it. This is very likely to create a memory leak.
+déc. 17, 2020 10:22:42 PM org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+GRAVE: L'application web [/jenkins] a crée un ThreadLocal avec une clé de type [java.lang.ThreadLocal] (valeur [java.lang.ThreadLocal@4664d029]) et une valeur de type [org.springframework.security.core.context.SecurityContextImpl] (valeur [SecurityContextImpl [Null authentication]]) mais ne l'a pas supprimé lorsqu'elle a été arrêtée, les threads seront graduellement renouvelés pour éviter une probable fuite de mémoire
+déc. 17, 2020 10:22:42 PM org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+GRAVE: L'application web [/jenkins] a crée un ThreadLocal avec une clé de type [java.lang.ThreadLocal] (valeur [java.lang.ThreadLocal@4664d029]) et une valeur de type [org.springframework.security.core.context.SecurityContextImpl] (valeur [SecurityContextImpl [Null authentication]]) mais ne l'a pas supprimé lorsqu'elle a été arrêtée, les threads seront graduellement renouvelés pour éviter une probable fuite de mémoire
+déc. 17, 2020 10:22:42 PM org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+GRAVE: L'application web [/jenkins] a crée un ThreadLocal avec une clé de type [java.lang.ThreadLocal] (valeur [java.lang.ThreadLocal@4664d029]) et une valeur de type [org.springframework.security.core.context.SecurityContextImpl] (valeur [SecurityContextImpl [Null authentication]]) mais ne l'a pas supprimé lorsqu'elle a été arrêtée, les threads seront graduellement renouvelés pour éviter une probable fuite de mémoire
+déc. 17, 2020 10:22:42 PM org.apache.coyote.AbstractProtocol stop
+INFOS: Arrêt du gestionnaire de protocole ["http-apr-8080"]
+déc. 17, 2020 10:22:42 PM org.apache.coyote.AbstractProtocol destroy
+INFOS: Destruction du gestionnaire de protocole ["http-apr-8080"]
