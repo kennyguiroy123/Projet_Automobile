@@ -8,51 +8,51 @@ import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import auto.spring.dao.CommandeDao;
-import auto.spring.dao.PizzaDao;
-import auto.spring.exception.PasDeCommandeSuivanteException;
-import auto.spring.modele.CommandePizza;
+import auto.spring.dao.CommandeDAO;
+import auto.spring.dao.ProduitDAO;
+import auto.spring.exception.PasDeProduitException;
+import auto.spring.modele.Commande;
 
 @Service
 public class CommandeService {
 	
-	private PizzaDao pizzaDao;
-	private CommandeDao commandeDao;
+	private ProduitDAO produitDao;
+	private CommandeDAO commandeDao;
 	
 	@Autowired
-	public CommandeService(PizzaDao pizzaDao, CommandeDao commandeDao) {
-		this.pizzaDao = pizzaDao;
+	public CommandeService(ProduitDAO produitDao, CommandeDAO commandeDao) {
+		this.produitDao = produitDao;
 		this.commandeDao = commandeDao;
 	}
 
 	@Transactional
-	public CommandePizza commander(CommandeDto commandeDto) {
-		CommandePizza commande = new CommandePizza();
+	public CommandeProduit commander(CommandeDto commandeDto) {
+		Commande commande = new Commande();
 		commande.setNom(commandeDto.getNom());
 		commande.setTelephone(commandeDto.getTelephone());
 		commande.setEnAttente(true);
 		commande.setDateEmission(new Date());
-		for(Long id : commandeDto.getPizzaId()) {
-			commande.ajouter(pizzaDao.getById(id));
+		for(int id : commandeDto.getProduitId()) {
+			commande.ajouter(produitDao.getRecapById(id));
 		}
 		commandeDao.sauver(commande);
 		return commande;
 	}
 
-	public CommandePizza getRecap(Long idCommande) {
+	public Commande getRecap(int idCommande) {
 		return commandeDao.getRecapById(idCommande);
 	}
 
-	public CommandePizza getCommandeSuivante() throws PasDeCommandeSuivanteException {
+	public Commande getCommandeSuivante() throws PasDeProduitException {
 		return commandeDao.getCommandeSuivante();
 	}
 
-	public List<CommandePizza> getCommandesEnAttente() {
+	public List<Commande> getCommandesEnAttente() {
 		return commandeDao.getCommandesEnAttente();
 	}
 
 	@Transactional
-	public void signalerCommandePrete(Long id) {
+	public void signalerCommandePrete(int id) {
 		commandeDao.signalerCommandePrete(id);
 	}
 
