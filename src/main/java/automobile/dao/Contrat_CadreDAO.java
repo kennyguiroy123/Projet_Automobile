@@ -10,12 +10,12 @@ import javax.persistence.PersistenceContext;
 
 import org.springframework.stereotype.Repository;
 
+import auto.spring.exception.PasDeCommandeSuivanteException;
 import automobile.modele.Commande;
 import automobile.modele.Contrat_Cadre;
 import automobile.modele.Entreprise;
 import automobile.modele.Fidelisation;
 import automobile.modele.RapportJournalier;
-import pizza.spring.exception.PasDeCommandeSuivanteException;
 
 @Repository
 public class Contrat_CadreDAO {
