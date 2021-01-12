@@ -1,4 +1,4 @@
-package pizza.spring.controleur;
+package auto.spring.controleur;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import pizza.spring.exception.PasDeCommandeSuivanteException;
-import pizza.spring.service.CommandeService;
+import auto.spring.exception.PasDeCommandeSuivanteException;
+import auto.spring.service.CommandeService;
 
 @Controller
 public class PreparationControleur {

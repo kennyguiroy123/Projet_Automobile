@@ -1,4 +1,4 @@
-package pizza.spring.controleur;
+package auto.spring.controleur;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -10,10 +10,10 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import pizza.spring.modele.Commande;
-import pizza.spring.service.CommandeDto;
-import pizza.spring.service.CommandeService;
-import pizza.spring.service.PizzaService;
+import auto.spring.modele.Commande;
+import auto.spring.service.CommandeDto;
+import auto.spring.service.CommandeService;
+import auto.spring.service.PizzaService;
 
 @Controller
 public class CommandeControleur {

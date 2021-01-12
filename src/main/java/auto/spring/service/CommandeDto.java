@@ -1,4 +1,4 @@
-package pizza.spring.service;
+package auto.spring.service;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package pizza.spring.dao;
+package auto.spring.dao;
 
 import java.util.List;
 
@@ -7,11 +7,11 @@ import javax.persistence.PersistenceContext;
 
 import org.springframework.stereotype.Repository;
 
+import automobile.modele.Commande;
 import pizza.spring.exception.PasDeCommandeSuivanteException;
-import pizza.spring.modele.Commande;
 
 @Repository
-public class CommandeDao {
+public class CommandeDAO {
 	
 	@PersistenceContext
 	private EntityManager em;

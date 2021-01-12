@@ -1,4 +1,4 @@
-package pizza.spring.controleur;
+package auto.spring.controleur;
 
 import java.io.IOException;
 

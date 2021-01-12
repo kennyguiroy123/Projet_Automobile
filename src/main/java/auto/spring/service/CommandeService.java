@@ -1,4 +1,4 @@
-package pizza.spring.service;
+package auto.spring.service;
 
 import java.util.Date;
 import java.util.List;
@@ -8,10 +8,10 @@ import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import pizza.spring.dao.CommandeDao;
-import pizza.spring.dao.PizzaDao;
-import pizza.spring.exception.PasDeCommandeSuivanteException;
-import pizza.spring.modele.Commande;
+import auto.spring.dao.CommandeDao;
+import auto.spring.dao.PizzaDao;
+import auto.spring.exception.PasDeCommandeSuivanteException;
+import auto.spring.modele.Commande;
 
 @Service
 public class CommandeService {

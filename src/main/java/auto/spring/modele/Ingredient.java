@@ -1,4 +1,4 @@
-package pizza.spring.modele;
+package auto.spring.modele;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -6,7 +6,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class Categorie {
+public class Ingredient {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -28,5 +28,4 @@ public class Categorie {
 	public void setNom(String nom) {
 		this.nom = nom;
 	}
-
 }

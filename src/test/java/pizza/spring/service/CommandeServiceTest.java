@@ -6,10 +6,12 @@ import static org.mockito.Mockito.*;
 import org.junit.Before;
 import org.junit.Test;
 
-import pizza.spring.dao.CommandeDao;
-import pizza.spring.dao.PizzaDao;
-import pizza.spring.modele.Commande;
-import pizza.spring.modele.Pizza;
+import auto.spring.dao.CommandeDao;
+import auto.spring.dao.PizzaDao;
+import auto.spring.modele.Commande;
+import auto.spring.modele.Pizza;
+import auto.spring.service.CommandeDto;
+import auto.spring.service.CommandeService;
 
 public class CommandeServiceTest {
 	

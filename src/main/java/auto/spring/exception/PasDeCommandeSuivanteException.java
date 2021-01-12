@@ -1,4 +1,4 @@
-package pizza.spring.exception;
+package auto.spring.exception;
 
 public class PasDeCommandeSuivanteException extends Exception {
 

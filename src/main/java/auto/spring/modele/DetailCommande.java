@@ -1,4 +1,4 @@
-package pizza.spring.modele;
+package auto.spring.modele;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
