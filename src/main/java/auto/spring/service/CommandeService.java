@@ -26,20 +26,19 @@ public class CommandeService {
 	}
 
 	@Transactional
-	public CommandeProduit commander(CommandeDto commandeDto) {
+	public Commande commander(CommandeDto commandeDto) {
 		Commande commande = new Commande();
-		commande.setNom(commandeDto.getNom());
-		commande.setTelephone(commandeDto.getTelephone());
+		commande.setDestinataire(commandeDto.getNom());
 		commande.setEnAttente(true);
-		commande.setDateEmission(new Date());
-		for(int id : commandeDto.getProduitId()) {
+		commande.setDate_commande(new Date());
+		for(long id : commandeDto.getProduitId()) {
 			commande.ajouter(produitDao.getRecapById(id));
 		}
 		commandeDao.sauver(commande);
 		return commande;
 	}
 
-	public Commande getRecap(int idCommande) {
+	public Commande getRecap(long idCommande) {
 		return commandeDao.getRecapById(idCommande);
 	}
 
@@ -52,7 +51,7 @@ public class CommandeService {
 	}
 
 	@Transactional
-	public void signalerCommandePrete(int id) {
+	public void signalerCommandePrete(long id) {
 		commandeDao.signalerCommandePrete(id);
 	}
 

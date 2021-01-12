@@ -8,7 +8,6 @@ import javax.persistence.PersistenceContext;
 import org.springframework.stereotype.Repository;
 
 import auto.spring.exception.PasDeProduitException;
-import auto.spring.modele.Commande;
 import auto.spring.modele.Produit;
 
 @Repository
@@ -19,6 +18,10 @@ public class ProduitDAO {
 
 	public void sauver(Produit Produit) {
 		em.persist(Produit);
+	}
+	
+	public Produit getRecapById(Long idProduit) {
+		return em.find(Produit.class, idProduit);
 	}
 
 	public List<Produit> getProduits() throws PasDeProduitException {
