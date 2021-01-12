@@ -7,7 +7,7 @@ import javax.persistence.PersistenceContext;
 
 import org.springframework.stereotype.Repository;
 
-import auto.spring.exception.PasDeCommandeSuivanteException;
+import auto.spring.exception.PasDeProduitException;
 import auto.spring.modele.Commande;
 
 @Repository
@@ -24,13 +24,10 @@ public class CommandeDAO {
 		return em.find(Commande.class, idCommande);
 	}
 
-	public Commande getCommandeSuivante() throws PasDeCommandeSuivanteException {
+	public Commande getCommandeSuivante() {
 		List<Commande> commandes =  em.createQuery("select c from Commande c where c.enAttente = true order by c.dateEmission", Commande.class)
 									  .setMaxResults(1)
 									  .getResultList();
-		if (commandes.isEmpty()) {
-			throw new PasDeCommandeSuivanteException();
-		}
 		return commandes.get(0);
 	}
 

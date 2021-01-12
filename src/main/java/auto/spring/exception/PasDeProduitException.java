@@ -1,6 +1,6 @@
 package auto.spring.exception;
 
-public class PasDeCommandeSuivanteException extends Exception {
+public class PasDeProduitException extends Exception {
 
 	private static final long serialVersionUID = 1L;
 

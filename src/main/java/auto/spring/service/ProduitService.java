@@ -11,7 +11,7 @@ import auto.spring.modele.Produit;
 public class ProduitService {
 
 	@Autowired
-	private Produit produit;
+	private ProduitDAO produit;
 
 	public List<Produit> getListeProduit() {
 		return produit.getProduits();
