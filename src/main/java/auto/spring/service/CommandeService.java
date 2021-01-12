@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 
 import auto.spring.dao.CommandeDAO;
 import auto.spring.dao.ProduitDAO;
-import auto.spring.exception.PasDeProduitException;
+import auto.spring.exception.PasDeCommandeSuivanteException;
 import auto.spring.modele.Commande;
 
 @Service
@@ -42,7 +42,7 @@ public class CommandeService {
 		return commandeDao.getRecapById(idCommande);
 	}
 
-	public Commande getCommandeSuivante() throws PasDeProduitException {
+	public Commande getCommandeSuivante() throws PasDeCommandeSuivanteException {
 		return commandeDao.getCommandeSuivante();
 	}
 

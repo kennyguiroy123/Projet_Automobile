@@ -3,17 +3,12 @@ package auto.spring.controleur;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.validation.BindingResult;
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-
-import auto.spring.modele.Commande;
+import auto.spring.exception.PasDeProduitException;
 import auto.spring.service.CommandeDto;
 import auto.spring.service.CommandeService;
-import auto.spring.service.PizzaService;
+import auto.spring.service.ProduitService;
 
 @Controller
 public class ClientController {
@@ -25,14 +20,14 @@ public class ClientController {
 	 */
 	
 	@Autowired
-	private PizzaService pizzaService;
+	private ProduitService produitService;
 	
 	@Autowired
 	private CommandeService commandeService;
 
 	@GetMapping("/auth")
-	public String afficherFormulaireAuth(Model model, CommandeDto commandeDto) {
-		model.addAttribute("pizzas", pizzaService.getListePizza());
+	public String afficherFormulaireAuth(Model model, CommandeDto commandeDto) throws PasDeProduitException {
+		model.addAttribute("produits", produitService.getListeProduit());
 		return "commande";
 	}
 
