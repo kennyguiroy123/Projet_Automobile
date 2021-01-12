@@ -2,8 +2,16 @@ package auto.spring.modele;
 
 import java.sql.Date;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Contrat {
 	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int n_contrat;
 	private byte taux_marge;
 	private String categorie;
