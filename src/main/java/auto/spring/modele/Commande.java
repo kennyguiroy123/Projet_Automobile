@@ -1,86 +1,63 @@
 package auto.spring.modele;
 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
+import java.sql.Date;
 
-import javax.persistence.CascadeType;
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
-
-@Entity
 public class Commande {
-
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
-	private String nom;
-	private String telephone;
-	@Temporal(TemporalType.TIMESTAMP)
-	private Date dateEmission;
-	private boolean enAttente;
-	@OneToMany(cascade = CascadeType.ALL, mappedBy = "commande", fetch = FetchType.EAGER)
-	private List<DetailCommande> details = new ArrayList<>();
-
-	public Long getId() {
-		return id;
+	
+	private int n_commande;
+	private Date date_commande;
+	private Date date_livraison;
+	private Double frais_port;
+	private String destinataire;
+	private Double prix_htc;
+	private Double prix_ttc;
+	
+	public int getN_commande() {
+		return n_commande;
 	}
-
-	public void setId(Long id) {
-		this.id = id;
+	public void setN_commande(int n_commande) {
+		this.n_commande = n_commande;
 	}
-
-	public String getNom() {
-		return nom;
+	public Date getDate_commande() {
+		return date_commande;
 	}
-
-	public void setNom(String nom) {
-		this.nom = nom;
+	public void setDate_commande(Date date_commande) {
+		this.date_commande = date_commande;
 	}
-
-	public String getTelephone() {
-		return telephone;
+	public Date getDate_livraison() {
+		return date_livraison;
 	}
-
-	public void setTelephone(String telephone) {
-		this.telephone = telephone;
+	public void setDate_livraison(Date date_livraison) {
+		this.date_livraison = date_livraison;
 	}
-
-	public Date getDateEmission() {
-		return dateEmission;
+	public Double getFrais_port() {
+		return frais_port;
 	}
-
-	public void setDateEmission(Date dateEmission) {
-		this.dateEmission = dateEmission;
+	public void setFrais_port(Double frais_port) {
+		this.frais_port = frais_port;
 	}
-
-	public boolean isEnAttente() {
-		return enAttente;
+	public String getDestinataire() {
+		return destinataire;
 	}
-
-	public void setEnAttente(boolean enAttente) {
-		this.enAttente = enAttente;
+	public void setDestinataire(String destinataire) {
+		this.destinataire = destinataire;
 	}
-
-	public List<DetailCommande> getDetails() {
-		return details;
+	public Double getPrix_htc() {
+		return prix_htc;
 	}
-
-	public void setDetails(List<DetailCommande> details) {
-		this.details = details;
+	public void setPrix_htc(Double prix_htc) {
+		this.prix_htc = prix_htc;
+	}
+	public Double getPrix_ttc() {
+		return prix_ttc;
+	}
+	public void setPrix_ttc(Double prix_ttc) {
+		this.prix_ttc = prix_ttc;
 	}
 	
-	public void ajouter(Pizza pizza) {
-		DetailCommande detailCommande = new DetailCommande();
-		detailCommande.setPizza(pizza);
-		detailCommande.setCommande(this);
-		this.details.add(detailCommande);
-	}
+	
+	
+	
+	
 
 }

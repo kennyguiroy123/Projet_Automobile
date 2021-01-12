@@ -16,16 +16,16 @@ public class CommandeDAO {
 	@PersistenceContext
 	private EntityManager em;
 
-	public void sauver(Commande commande) {
+	public void sauver(CommandePizza commande) {
 		em.persist(commande);
 	}
 
-	public Commande getRecapById(Long idCommande) {
-		return em.find(Commande.class, idCommande);
+	public CommandePizza getRecapById(Long idCommande) {
+		return em.find(CommandePizza.class, idCommande);
 	}
 
-	public Commande getCommandeSuivante() throws PasDeCommandeSuivanteException {
-		List<Commande> commandes =  em.createQuery("select c from Commande c where c.enAttente = true order by c.dateEmission", Commande.class)
+	public CommandePizza getCommandeSuivante() throws PasDeCommandeSuivanteException {
+		List<CommandePizza> commandes =  em.createQuery("select c from Commande c where c.enAttente = true order by c.dateEmission", CommandePizza.class)
 									  .setMaxResults(1)
 									  .getResultList();
 		if (commandes.isEmpty()) {
@@ -34,8 +34,8 @@ public class CommandeDAO {
 		return commandes.get(0);
 	}
 
-	public List<Commande> getCommandesEnAttente() {
-		return em.createQuery("select c from Commande c where c.enAttente = true order by c.dateEmission", Commande.class)
+	public List<CommandePizza> getCommandesEnAttente() {
+		return em.createQuery("select c from Commande c where c.enAttente = true order by c.dateEmission", CommandePizza.class)
 				 .getResultList();
 	}
 

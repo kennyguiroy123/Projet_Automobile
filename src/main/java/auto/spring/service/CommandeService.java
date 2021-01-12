@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 import auto.spring.dao.CommandeDao;
 import auto.spring.dao.PizzaDao;
 import auto.spring.exception.PasDeCommandeSuivanteException;
-import auto.spring.modele.Commande;
+import auto.spring.modele.CommandePizza;
 
 @Service
 public class CommandeService {
@@ -26,8 +26,8 @@ public class CommandeService {
 	}
 
 	@Transactional
-	public Commande commander(CommandeDto commandeDto) {
-		Commande commande = new Commande();
+	public CommandePizza commander(CommandeDto commandeDto) {
+		CommandePizza commande = new CommandePizza();
 		commande.setNom(commandeDto.getNom());
 		commande.setTelephone(commandeDto.getTelephone());
 		commande.setEnAttente(true);
@@ -39,15 +39,15 @@ public class CommandeService {
 		return commande;
 	}
 
-	public Commande getRecap(Long idCommande) {
+	public CommandePizza getRecap(Long idCommande) {
 		return commandeDao.getRecapById(idCommande);
 	}
 
-	public Commande getCommandeSuivante() throws PasDeCommandeSuivanteException {
+	public CommandePizza getCommandeSuivante() throws PasDeCommandeSuivanteException {
 		return commandeDao.getCommandeSuivante();
 	}
 
-	public List<Commande> getCommandesEnAttente() {
+	public List<CommandePizza> getCommandesEnAttente() {
 		return commandeDao.getCommandesEnAttente();
 	}
 

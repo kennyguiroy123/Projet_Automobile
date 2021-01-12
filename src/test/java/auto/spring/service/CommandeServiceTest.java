@@ -8,7 +8,7 @@ import org.junit.Test;
 
 import auto.spring.dao.CommandeDao;
 import auto.spring.dao.PizzaDao;
-import auto.spring.modele.Commande;
+import auto.spring.modele.CommandePizza;
 import auto.spring.modele.Pizza;
 import auto.spring.service.CommandeDto;
 import auto.spring.service.CommandeService;
@@ -33,7 +33,7 @@ public class CommandeServiceTest {
 		CommandeDto commandeDto = new CommandeDto();
 		commandeDto.getPizzaId().add(1L);
 		
-		Commande commande = commandeService.commander(commandeDto);
+		CommandePizza commande = commandeService.commander(commandeDto);
 		
 		assertEquals(pizza, commande.getDetails().get(0).getPizza());
 	}
@@ -44,7 +44,7 @@ public class CommandeServiceTest {
 		commandeDto.setNom("nom");
 		commandeDto.setTelephone("0606060606");
 		
-		Commande commande = commandeService.commander(commandeDto);
+		CommandePizza commande = commandeService.commander(commandeDto);
 		
 		assertEquals("nom", commande.getNom());
 		assertEquals("0606060606", commande.getTelephone());
@@ -54,7 +54,7 @@ public class CommandeServiceTest {
 	public void commander_cree_une_commande_en_attente_avec_une_date() throws Exception {
 		CommandeDto commandeDto = new CommandeDto();
 		
-		Commande commande = commandeService.commander(commandeDto);
+		CommandePizza commande = commandeService.commander(commandeDto);
 		
 		assertTrue(commande.isEnAttente());
 		assertNotNull(commande.getDateEmission());
@@ -64,7 +64,7 @@ public class CommandeServiceTest {
 	public void commander_sauve_la_commande() throws Exception {
 		CommandeDto commandeDto = new CommandeDto();
 		
-		Commande commande = commandeService.commander(commandeDto);
+		CommandePizza commande = commandeService.commander(commandeDto);
 		
 		verify(commandeDaoMock).sauver(commande);
 	}

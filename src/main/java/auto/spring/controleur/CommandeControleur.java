@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import auto.spring.modele.Commande;
+import auto.spring.modele.CommandePizza;
 import auto.spring.service.CommandeDto;
 import auto.spring.service.CommandeService;
 import auto.spring.service.PizzaService;
@@ -35,7 +35,7 @@ public class CommandeControleur {
 		if (bindingResult.hasErrors()) {
 			return afficherFormulaireCommande(model, commandeDto);
 		}
-		Commande commande = commandeService.commander(commandeDto);
+		CommandePizza commande = commandeService.commander(commandeDto);
 		return "redirect:/recap-commande?id=" + commande.getId();
 	}
 
