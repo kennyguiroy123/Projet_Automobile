@@ -7,37 +7,30 @@ import javax.validation.constraints.Size;
 
 import org.hibernate.validator.constraints.NotBlank;
 
+import auto.spring.modele.Produit;
+
 public class CommandeDto {
 	
-	@Size(min = 1, message = "Vous devez choisir au moins une pizza")
-	private List<Long> pizzaId = new ArrayList<>();
+	@Size(min = 1, message = "Vous devez choisir au moins un produit")
+	private List<Produit> produitId = new ArrayList<>();
 	@NotBlank
-	private String nom;
-	@NotBlank
-	private String telephone;
+	private String nom_destinataire;
 
-	public List<Long> getPizzaId() {
-		return pizzaId;
+	
+	public List<Produit> getProduitId() {
+		return produitId;
 	}
 
-	public void setPizzaId(List<Long> pizzaId) {
-		this.pizzaId = pizzaId;
+	public void setProduitId(List<Produit> produitId) {
+		this.produitId = produitId;
 	}
 
 	public String getNom() {
-		return nom;
+		return nom_destinataire;
 	}
 
-	public void setNom(String nom) {
-		this.nom = nom;
-	}
-
-	public String getTelephone() {
-		return telephone;
-	}
-
-	public void setTelephone(String telephone) {
-		this.telephone = telephone;
+	public void setNom(String nom_destinataire) {
+		this.nom_destinataire = nom_destinataire;
 	}
 
 }

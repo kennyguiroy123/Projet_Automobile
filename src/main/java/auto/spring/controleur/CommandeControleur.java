@@ -40,7 +40,7 @@ public class CommandeControleur {
 	}
 
 	@GetMapping("/recap-commande")
-	public String afficherRecapitulatif(Model model, @RequestParam long id) {
+	public String afficherRecapitulatif(Model model, @RequestParam int id) {
 		model.addAttribute("commande", commandeService.getRecap(id));
 		return "recap-commande";
 	}

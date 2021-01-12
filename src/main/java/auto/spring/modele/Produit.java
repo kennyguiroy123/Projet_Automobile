@@ -20,6 +20,7 @@ public class Produit {
 	@JoinTable(name = "Contenir", joinColumns = @JoinColumn(name = "nCommande"), inverseJoinColumns = @JoinColumn(name = "nProduit"))
 	private List<Commande> commandes; 
 	
+	
 	public int getN_produit() {
 		return n_produit;
 	}
