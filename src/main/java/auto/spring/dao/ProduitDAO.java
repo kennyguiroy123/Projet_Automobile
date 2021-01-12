@@ -24,13 +24,9 @@ public class ProduitDAO {
 		return em.find(Produit.class, idProduit);
 	}
 
-	public Produit getProduit() throws PasDeProduitException {
-		List<Produit> Produits =  em.createQuery("select * from Produit", Produit.class)
-									  .setMaxResults(1)
-									  .getResultList();
-		if (Produits.isEmpty()) {
-			throw new PasDeProduitException();
-		}
+	public Produit getProduits() throws PasDeProduitException {
+		List<Produit> Produits =  em.createQuery("select * from Produit", Produit.class).getResultList();
+		if (Produits.isEmpty()) {throw new PasDeProduitException();}
 		return Produits.get(0);
 	}
 
