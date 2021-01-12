@@ -11,17 +11,17 @@ public class DetailCommande {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Long id;
     @ManyToOne
     private Commande commande;
     @ManyToOne
     private Produit produit;
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -37,7 +37,7 @@ public class DetailCommande {
         return produit;
     }
 
-    public void setPizza(Produit produit) {
+    public void setProduit(Produit produit) {
         this.produit = produit;
     }
 }

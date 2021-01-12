@@ -1,23 +1,39 @@
 package auto.spring.modele;
 
-import java.sql.Date;
+
 import java.util.List;
+import java.util.ArrayList;
+import java.util.Date;
 
+import javax.persistence.CascadeType;
+import javax.persistence.Entity;
 import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
+@Entity
 public class Commande {
 	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int n_commande;
+	@Temporal(TemporalType.DATE)
 	private Date date_commande;
 	private Date date_livraison;
 	private Double frais_port;
 	private String destinataire;
 	private Double prix_htc;
 	private Double prix_ttc;
+	private boolean enAttente;
 	
-	@ManyToMany(mappedBy = "Produit", fetch = FetchType.LAZY)
-    private List<Produit> produits;
+	//@ManyToMany(mappedBy = "Produit", fetch = FetchType.LAZY)
+	@OneToMany(cascade= CascadeType.ALL, mappedBy = "commande", fetch=FetchType.EAGER)
+    private List<DetailCommande> details = new ArrayList<>();
 	
 	
 	public int getN_commande() {
@@ -63,7 +79,19 @@ public class Commande {
 		this.prix_ttc = prix_ttc;
 	}
 	
+	public void ajouter(Produit produit) {
+		DetailCommande detailCommande = new DetailCommande();
+		detailCommande.setProduit(produit);
+		detailCommande.setCommande(this);
+		this.details.add(detailCommande);
+	}
 	
+	public boolean isEnAttente() {
+		return enAttente;
+	}
+	public void setEnAttente(boolean enAttente) {
+		this.enAttente = enAttente;
+	}
 	
 	
 	

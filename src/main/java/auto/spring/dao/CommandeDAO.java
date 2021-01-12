@@ -7,7 +7,6 @@ import javax.persistence.PersistenceContext;
 
 import org.springframework.stereotype.Repository;
 
-import auto.spring.exception.PasDeProduitException;
 import auto.spring.modele.Commande;
 
 @Repository
@@ -20,15 +19,15 @@ public class CommandeDAO {
 		em.persist(commande);
 	}
 
-<<<<<<< Updated upstream
 	public Commande getCommandeById(Long idCommande) {
 		return em.find(Commande.class, idCommande);
 	}
 
 	public List<Commande> getCommandes() {
-		return em.createQuery("select * from Commande", Commande.class).getResultList();
-=======
-	public Commande getRecapById(int idCommande) {
+		return em.createQuery("select * from Commande", Commande.class).getResultList();	
+	}
+		
+	public Commande getRecapById(Long idCommande) {
 		return em.find(Commande.class, idCommande);
 	}
 
@@ -44,11 +43,10 @@ public class CommandeDAO {
 				 .getResultList();
 	}
 
-	public void signalerCommandePrete(int id) {
+	public void signalerCommandePrete(Long id) {
 		em.createQuery("update Commande c set c.enAttente = false where c.id = :id")
 		  .setParameter("id", id)
 		  .executeUpdate();
->>>>>>> Stashed changes
 	}
 
 }
