@@ -1,9 +1,13 @@
 package auto.spring.modele;
 
+import java.util.List;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 
 @Entity
 public class Entreprise {
@@ -16,6 +20,22 @@ public class Entreprise {
 	private int telephone;
 	private String email;
 	
+	@OneToMany
+	private List<Commande> commandes;
+	
+	
+	/**
+	 * @return the commandes
+	 */
+	public List<Commande> getCommandes() {
+		return commandes;
+	}
+	/**
+	 * @param commandes the commandes to set
+	 */
+	public void setCommandes(List<Commande> commandes) {
+		this.commandes = commandes;
+	}
 	public int getN_entreprise() {
 		return n_entreprise;
 	}

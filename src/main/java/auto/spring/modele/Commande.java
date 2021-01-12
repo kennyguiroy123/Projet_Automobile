@@ -5,6 +5,7 @@ import java.util.List;
 
 import javax.persistence.FetchType;
 import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
 
 public class Commande {
 	
@@ -19,6 +20,8 @@ public class Commande {
 	@ManyToMany(mappedBy = "Produit", fetch = FetchType.LAZY)
     private List<Produit> produits;
 	
+	@ManyToOne
+	private Entreprise entreprise;
 	
 	public int getN_commande() {
 		return n_commande;
