@@ -8,24 +8,24 @@ import javax.persistence.PersistenceContext;
 import org.springframework.stereotype.Repository;
 
 import auto.spring.exception.PasDeCommandeSuivanteException;
-import auto.spring.modele.CommandePizza;
+import auto.spring.modele.Commande;
 
 @Repository
-public class CommandeDao {
+public class CommandeDAO {
 	
 	@PersistenceContext
 	private EntityManager em;
 
-	public void sauver(CommandePizza commande) {
+	public void sauver(Commande commande) {
 		em.persist(commande);
 	}
 
-	public CommandePizza getRecapById(Long idCommande) {
-		return em.find(CommandePizza.class, idCommande);
+	public Commande getRecapById(Long idCommande) {
+		return em.find(Commande.class, idCommande);
 	}
 
-	public CommandePizza getCommandeSuivante() throws PasDeCommandeSuivanteException {
-		List<CommandePizza> commandes =  em.createQuery("select c from Commande c where c.enAttente = true order by c.dateEmission", CommandePizza.class)
+	public Commande getCommandeSuivante() throws PasDeCommandeSuivanteException {
+		List<Commande> commandes =  em.createQuery("select c from Commande c where c.enAttente = true order by c.dateEmission", Commande.class)
 									  .setMaxResults(1)
 									  .getResultList();
 		if (commandes.isEmpty()) {
@@ -34,8 +34,8 @@ public class CommandeDao {
 		return commandes.get(0);
 	}
 
-	public List<CommandePizza> getCommandesEnAttente() {
-		return em.createQuery("select c from Commande c where c.enAttente = true order by c.dateEmission", CommandePizza.class)
+	public List<Commande> getCommandesEnAttente() {
+		return em.createQuery("select c from Commande c where c.enAttente = true order by c.dateEmission", Commande.class)
 				 .getResultList();
 	}
 
