@@ -1,5 +1,12 @@
 package auto.spring.modele;
 
+import java.util.List;
+
+import javax.persistence.FetchType;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
+
 public class Produit {
 	
 	private int n_produit;
@@ -9,7 +16,9 @@ public class Produit {
 	private Double TVA;
 	private int quantite_stock;
 	private String description;
-	
+	@ManyToMany(fetch = FetchType.EAGER)
+	@JoinTable(name = "Contenir", joinColumns = @JoinColumn(name = "nCommande"), inverseJoinColumns = @JoinColumn(name = "nProduit"))
+	private List<Commande> commandes; 
 	
 	public int getN_produit() {
 		return n_produit;

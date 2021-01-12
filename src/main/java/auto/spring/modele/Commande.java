@@ -1,6 +1,10 @@
 package auto.spring.modele;
 
 import java.sql.Date;
+import java.util.List;
+
+import javax.persistence.FetchType;
+import javax.persistence.ManyToMany;
 
 public class Commande {
 	
@@ -11,6 +15,10 @@ public class Commande {
 	private String destinataire;
 	private Double prix_htc;
 	private Double prix_ttc;
+	
+	@ManyToMany(mappedBy = "Produit", fetch = FetchType.LAZY)
+    private List<Produit> produits;
+	
 	
 	public int getN_commande() {
 		return n_commande;
