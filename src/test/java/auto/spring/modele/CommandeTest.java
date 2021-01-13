@@ -83,11 +83,6 @@ public class CommandeTest {
 	}
 
 	@Test
-	public void testAjouter() {
-		//todo
-	}
-
-	@Test
 	public void testIsEnAttente() {
 		assertEquals(this.enAttente, this.nCom.isEnAttente());
 	}
