@@ -39,6 +39,17 @@ public class Commande {
 	@ManyToOne
 	private Entreprise entreprise;
 	
+	public Commande(int n_commande2, Date date_commande2, Date date_livraison2, Double frais_port2,
+			String destinataire2, Double prix_htc2, Double prix_ttc2, boolean enAttente2) {
+		n_commande = n_commande2;
+		date_commande = date_commande2;
+		date_livraison = date_livraison2;
+		frais_port = frais_port2;
+		destinataire = destinataire2;
+		prix_htc = prix_htc2;
+		prix_ttc = prix_ttc2;
+		enAttente = enAttente2;
+	}
 	public int getN_commande() {
 		return n_commande;
 	}
