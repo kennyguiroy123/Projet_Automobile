@@ -15,12 +15,15 @@ public class Client {
 	private String motdepasse;
 	private String token;
 	
+	public Client(String pnom, String pmdp, String ptoken) {
+		this.nom_utilisateur = pnom;
+		this.motdepasse = pmdp;
+		this.token = ptoken;
+	}
 	public int getN_client() {
 		return n_client;
 	}
-	public void setN_client(int n_client) {
-		this.n_client = n_client;
-	}
+	
 	public String getNom_utilisateur() {
 		return nom_utilisateur;
 	}
