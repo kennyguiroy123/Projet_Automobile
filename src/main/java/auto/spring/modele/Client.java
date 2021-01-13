@@ -15,6 +15,10 @@ public class Client {
 	private String motdepasse;
 	private String token;
 	
+	public Client() {
+		
+	}
+	
 	public Client(String pnom, String pmdp, String ptoken) {
 		this.nom_utilisateur = pnom;
 		this.motdepasse = pmdp;
