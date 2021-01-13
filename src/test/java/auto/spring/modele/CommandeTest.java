@@ -15,7 +15,7 @@ import org.junit.Test;
 
 public class CommandeTest {
 
-	private int n_commande;
+	private int nCommande;
 	private Date date_commande;
 	private Date date_livraison;
 	private Double frais_port;
@@ -27,7 +27,7 @@ public class CommandeTest {
 	
 	@Before
 	public void setUp() throws Exception {
-		n_commande = 0;
+		nCommande = 1;
 		date_commande = new Date();
 		date_livraison = new Date();
 		frais_port = 20.0;
@@ -35,7 +35,7 @@ public class CommandeTest {
 		prix_htc = 0.5;
 		prix_ttc = 0.7;
 		enAttente = true;
-		nCom = new Commande(n_commande,date_commande, date_livraison, frais_port, destinataire, prix_htc, prix_ttc, enAttente);
+		nCom = new Commande(nCommande, date_commande, date_livraison, frais_port, destinataire, prix_htc, prix_ttc, enAttente);
 	}
 
 	@Test
